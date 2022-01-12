@@ -1,4 +1,6 @@
 package CardGame;
+//Card Compare menthod  -- Assumes that suits are more important than rank value of a card
+// for example the 2 of Hearts is of greater value than any Club
 
 public class App {
 	public static void main(String[] args) {

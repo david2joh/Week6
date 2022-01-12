@@ -21,8 +21,7 @@ public class Player {
 		this.name = name;
 	}
 
-	
-	Card flip() {
+		Card flip() {
 		if ( hand.size() > 0) { return(hand.remove(0)); }
 		else return null;// should error here instead
 		}
@@ -47,11 +46,7 @@ public class Player {
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
-
 }

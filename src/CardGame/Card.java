@@ -38,17 +38,15 @@ public class Card {
 		//The correct way is to implement a static lookup map in the enums
 		//Or use the EnumMap collection provided since Java 1.5
 		this.rank = Rank.values()[ordValue % 13];
-		this.suit = Suits.valueOf(ordValue-ordValue%13);
-		this.value = rank.ordinal()+2;
+		this.suit = Suits.valueOf(ordValue-ordValue%13);  //Lookup in the static map
+		this.value = rank.ordinal()+2;  //adjust my ordinal to the value of the requirements document
 		this.name = generateName(this.suit,this.rank);
 	}
 	
 	public int getValue() {
 		return value;
 	}
-	public void setValue(int value) {
-		this.value = value;
-	}
+
 	public String getName() {
 		return name;
 	}
